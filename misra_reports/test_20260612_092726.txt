@@ -1,0 +1,1960 @@
+
+Source file      : test.cpp
+Generated at     : 20260612_092726
+Total violations : 1069
+Rules violated   : 83
+
+------------------------------------------------------------
+VIOLATION SUMMARY
+------------------------------------------------------------
+Rule           Count  Description
+--------------------  ------------------------------------
+Rule 1             6  579 | const char* r1_str1 = "hello\x80world";   /*...
+Rule 2            10  216 |     const char* trig1 = "??=";        /* Rul...
+Rule 4            13  C:\Users\nithi\drdoproject\test.cpp:100:1: warning...
+Rule 6             5  C:\Users\nithi\drdoproject\test.cpp:588:5: warning...
+Rule 7             4  C:\Users\nithi\drdoproject\test.cpp:77:8: warning:...
+Rule 8           137  C:\Users\nithi\drdoproject\test.cpp:53:1: warning:...
+Rule 11            9  561 | int StatusCode;                    /* Rule 1...
+Rule 12           20  C:\Users\nithi\drdoproject\test.cpp:115:1: warning...
+Rule 13            9  238 |     int oct1 = 07;                     /* Ru...
+Rule 15            6  519 |                             int x = 100;    ...
+Rule 18            8  C:\Users\nithi\drdoproject\test.cpp:62:13: warning...
+Rule 19           15  C:\Users\nithi\drdoproject\test.cpp:53:8: warning:...
+Rule 22            6  606 |     int  r22_a;                    /* Rule 2...
+Rule 23           24  C:\Users\nithi\drdoproject\test.cpp:70:1: warning:...
+Rule 24            7  94 | enum MixedA { MA_FIRST = 0, MA_SECOND, MA_THI...
+Rule 25            6  457 |                         if (p && q++) { p = ...
+Rule 27           10  254 |     if (x = 5) { x = 0; }           /* Rule ...
+Rule 28           19  C:\Users\nithi\drdoproject\test.cpp:83:1: warning:...
+Rule 29            8  C:\Users\nithi\drdoproject\test.cpp:88:1: warning:...
+Rule 32            2  C:\Users\nithi\drdoproject\test.cpp:469:35: warnin...
+Rule 34           15  244 |     long         suf1 = 10l;          /* Rul...
+Rule 38            6  259 |     if (f1 == 1.0F) { f1 = 0.0F; }   /* Rule...
+Rule 39            5  C:\Users\nithi\drdoproject\test.cpp:271:5: warning...
+Rule 41            8  C:\Users\nithi\drdoproject\test.cpp:264:5: warning...
+Rule 43            7  271 |     goto lbl_b;                        /* Ru...
+Rule 44           19  276 |         if (i == 2) break;             /* Ru...
+Rule 46           45  C:\Users\nithi\drdoproject\test.cpp:163:5: warning...
+Rule 47            9  C:\Users\nithi\drdoproject\test.cpp:299:5: warning...
+Rule 48            6  C:\Users\nithi\drdoproject\test.cpp:309:5: warning...
+Rule 49            4  318 |     switch (sw > 0) { default: break; }  /* ...
+Rule 50            8  C:\Users\nithi\drdoproject\test.cpp:318:5: warning...
+Rule 51            6  330 |                         for (float fc1 = 0.0...
+Rule 53            3  C:\Users\nithi\drdoproject\test.cpp:338:25: warnin...
+Rule 55            1  C:\Users\nithi\drdoproject\test.cpp:175:1: warning...
+Rule 56           18  C:\Users\nithi\drdoproject\test.cpp:122:1: warning...
+Rule 57            4  C:\Users\nithi\drdoproject\test.cpp:161:1: warning...
+Rule 58           36  C:\Users\nithi\drdoproject\test.cpp:115:1: warning...
+Rule 59           21  C:\Users\nithi\drdoproject\test.cpp:123:1: warning...
+Rule 64            3  C:\Users\nithi\drdoproject\test.cpp:161:1: warning...
+Rule 72           16  C:\Users\nithi\drdoproject\test.cpp:29:9: warning:...
+Rule 73            4  C:\Users\nithi\drdoproject\test.cpp:45:8: warning:...
+Rule 74            8  C:\Users\nithi\drdoproject\test.cpp:29:9: warning:...
+Rule 76            2  C:\Users\nithi\drdoproject\test.cpp:41:9: warning:...
+Rule 78            4  C:\Users\nithi\drdoproject\test.cpp:37:9: warning:...
+Rule 80            4  41 | #define PASTE2(a,b)   #a ## b                ...
+Rule 83            8  C:\Users\nithi\drdoproject\test.cpp:348:35: warnin...
+Rule 86            6  100 | VoidFn g_fn1;                       /* Rule ...
+Rule 88            3  627 |     VoidIntFn fp1 = (VoidIntFn)returns_int; ...
+Rule 93            8  C:\Users\nithi\drdoproject\test.cpp:106:5: warning...
+Rule 94            4  C:\Users\nithi\drdoproject\test.cpp:109:5: warning...
+Rule 98            8  C:\Users\nithi\drdoproject\test.cpp:29:9: warning:...
+Rule 99           14  C:\Users\nithi\drdoproject\test.cpp:362:25: warnin...
+Rule 100           6  C:\Users\nithi\drdoproject\test.cpp:211:16: warnin...
+Rule 105           6  C:\Users\nithi\drdoproject\test.cpp:366:25: warnin...
+Rule 106           7  C:\Users\nithi\drdoproject\test.cpp:370:25: warnin...
+Rule 107           9  375 |                         int   parsed1 = atoi...
+Rule 108           6  381 |                         if (0) { exit(0); } ...
+Rule 119           6  C:\Users\nithi\drdoproject\test.cpp:62:1: warning:...
+Rule 120          17  C:\Users\nithi\drdoproject\test.cpp:70:1: warning:...
+Rule 123           6  C:\Users\nithi\drdoproject\test.cpp:385:37: warnin...
+Rule 124           8  390 |                         int pi1 = (int)pa;  ...
+Rule 125           8  401 |                         int    ci1 = (v > 0)...
+Rule 126          13  C:\Users\nithi\drdoproject\test.cpp:381:25: warnin...
+Rule 127           6  C:\Users\nithi\drdoproject\test.cpp:401:54: warnin...
+Rule 128           4  C:\Users\nithi\drdoproject\test.cpp:413:38: warnin...
+Rule 129          22  C:\Users\nithi\drdoproject\test.cpp:71:24: warning...
+Rule 130           4  C:\Users\nithi\drdoproject\test.cpp:222:24: warnin...
+Rule 134          15  673 |     int r134_a = val >> -1;        /* Rule 1...
+Rule 136         128  C:\Users\nithi\drdoproject\test.cpp:70:17: warning...
+Rule 137          12  430 |                         int val1 = arr[2];  ...
+Rule 139          26  C:\Users\nithi\drdoproject\test.cpp:148:5: warning...
+Rule 143           4  326 |                         switch (sw) {}      ...
+Rule 161           7  C:\Users\nithi\drdoproject\test.cpp:395:36: warnin...
+Rule 163          13  443 |                         int ro1 = y++ + 1;  ...
+Rule 165          12  450 |                         if (a && b) { a = 0;...
+Rule 166           6  463 |                         unsigned int neg1 = ...
+Rule 171           9  469 |                         int cd = (ca = 1, cb...
+Rule 181          29  C:\Users\nithi\drdoproject\test.cpp:178:5: warning...
+Rule 182           2  C:\Users\nithi\drdoproject\test.cpp:481:25: warnin...
+Rule 188           2  C:\Users\nithi\drdoproject\test.cpp:330:25: warnin...
+Rule 195           8  C:\Users\nithi\drdoproject\test.cpp:488:25: warnin...
+Rule 196           3  C:\Users\nithi\drdoproject\test.cpp:161:1: warning...
+Rule 200          28  53 | int    g_count;                              ...
+
+------------------------------------------------------------
+RAW CHECKER OUTPUT
+------------------------------------------------------------
+C:\Users\nithi\drdoproject\test.cpp:14:25: warning: '/*' within block comment [-Wcomment]
+   14 | /* outer comment starts /* nested marker one */ continues* /
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:14:49: error: unknown type name 'continues'
+   14 | /* outer comment starts /* nested marker one */ continues* /
+      |                                                 ^
+C:\Users\nithi\drdoproject\test.cpp:14:60: error: expected identifier or '('
+   14 | /* outer comment starts /* nested marker one */ continues* /
+      |                                                            ^
+C:\Users\nithi\drdoproject\test.cpp:15:17: warning: '/*' within block comment [-Wcomment]
+   15 | /* second outer /* nested marker two */ end * /
+      |                 ^
+In file included from C:\Users\nithi\drdoproject\test.cpp:18:
+In file included from C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\stdint.h:11:
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:389:51: error: unknown type name 'uintptr_t'; did you mean 'intptr_t'?
+  389 |         void __cdecl __security_check_cookie(_In_ uintptr_t _StackCookie);
+      |                                                   ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:190:30: note: 'intptr_t' declared here
+  190 |     typedef __int64          intptr_t;
+      |                              ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:390:67: error: unknown type name 'uintptr_t'; did you mean 'intptr_t'?
+  390 |         __declspec(noreturn) void __cdecl __report_gsfailure(_In_ uintptr_t _StackCookie);
+      |                                                                   ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:190:30: note: 'intptr_t' declared here
+  190 |     typedef __int64          intptr_t;
+      |                              ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:394:8: error: unknown type name 'uintptr_t'; did you mean 'intptr_t'?
+  394 | extern uintptr_t __security_cookie;
+      |        ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:190:30: note: 'intptr_t' declared here
+  190 |     typedef __int64          intptr_t;
+      |                              ^
+In file included from C:\Users\nithi\drdoproject\test.cpp:19:
+In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:12:
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt.h:380:16: error: unknown type name 'uintptr_t'; did you mean 'intptr_t'?
+  380 |     _In_       uintptr_t _Reserved);
+      |                ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:190:30: note: 'intptr_t' declared here
+  190 |     typedef __int64          intptr_t;
+      |                              ^
+In file included from C:\Users\nithi\drdoproject\test.cpp:19:
+In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stdlib.h:14:
+In file included from C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_search.h:14:
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stddef.h:57:17: error: unknown type name 'uintptr_t'; did you mean 'intptr_t'?
+   57 | _ACRTIMP extern uintptr_t __cdecl __threadhandle(void);
+      |                 ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime.h:190:30: note: 'intptr_t' declared here
+  190 |     typedef __int64          intptr_t;
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:29:9: warning: Rule 98: Standard library function names shall not be reused
+   29 | #define memset(d,v,n) (d)          /* Rule 98 PP + Rule 74 (fn-like) */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:29:9: warning: Rule 74: Prefer a function over a function-like macro
+C:\Users\nithi\drdoproject\test.cpp:29:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:30:9: warning: Rule 98: Standard library function names shall not be reused
+   30 | #define strcpy(d,s)   (d)          /* Rule 98 PP + Rule 74 (fn-like) */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:30:9: warning: Rule 74: Prefer a function over a function-like macro
+C:\Users\nithi\drdoproject\test.cpp:30:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:33:9: warning: Rule 74: Prefer a function over a function-like macro
+   33 | #define MAX(a,b)   ((a) > (b) ? (a) : (b))   /* Rule 74 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:33:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:34:9: warning: Rule 74: Prefer a function over a function-like macro
+   34 | #define SQUARE(x)  ((x) * (x))               /* Rule 74 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:34:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:37:9: warning: Rule 78: Macro expression must be enclosed in parentheses
+   37 | #define OFFSET   10 + 5                       /* Rule 78 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:37:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:38:9: warning: Rule 78: Macro expression must be enclosed in parentheses
+   38 | #define SCALE    2 * 3                        /* Rule 78 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:38:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:41:9: warning: Rule 74: Prefer a function over a function-like macro
+   41 | #define PASTE2(a,b)   #a ## b                 /* Rule 80 (# and ##) + Rule 74 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:41:9: warning: Rule 80: At most one # or ## operator allowed in a macro
+C:\Users\nithi\drdoproject\test.cpp:41:9: warning: Rule 76: Macro arguments shall not contain tokens that look like pre-processing directives
+C:\Users\nithi\drdoproject\test.cpp:41:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:42:9: warning: Rule 74: Prefer a function over a function-like macro
+   42 | #define PASTE3(a,b,c) #a ## #b               /* Rule 80 (three operators) + Rule 74 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:42:9: warning: Rule 80: At most one # or ## operator allowed in a macro
+C:\Users\nithi\drdoproject\test.cpp:42:9: warning: Rule 76: Macro arguments shall not contain tokens that look like pre-processing directives
+C:\Users\nithi\drdoproject\test.cpp:42:9: warning: Rule 72: Macros shall not be #defined within a block
+C:\Users\nithi\drdoproject\test.cpp:45:8: warning: Rule 73: #undef should not be used
+   45 | #undef memset                                 /* Rule 73 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:45:8: warning: Rule 72: Macros shall not be #undefined within a block
+C:\Users\nithi\drdoproject\test.cpp:46:8: warning: Rule 73: #undef should not be used
+   46 | #undef strcpy                                 /* Rule 73 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:46:8: warning: Rule 72: Macros shall not be #undefined within a block
+C:\Users\nithi\drdoproject\test.cpp:115:6: error: conflicting types for 'strlen'
+  115 | void strlen(const char* s) { (void)s; }       /* Rule 98 AST + Rule 58 */
+      |      ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\string.h:215:16: note: previous declaration is here
+  215 | size_t __cdecl strlen(
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:116:6: error: conflicting types for 'memcpy'
+  116 | void memcpy(void* d, const void* s, unsigned n)
+      |      ^
+C:\Program Files\Microsoft Visual Studio\18\Insiders\VC\Tools\MSVC\14.51.36231\include\vcruntime_string.h:43:15: note: previous declaration is here
+   43 | void* __cdecl memcpy(
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:142:9: warning: Rule 72: Macros shall not be #defined within a block
+  142 | #define BLOCK_DEFINE_A  42         /* Rule 72 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:149:9: warning: Rule 72: Macros shall not be #defined within a block
+  149 | #define BLOCK_DEFINE_B  99         /* Rule 72 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:194:9: warning: Rule 72: Macros shall not be #defined within a block
+  194 | #define INSIDE_PROTO_A 1          /* Rule 72 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:211:16: warning: Rule 100: errno shall not be used
+  211 |     int err1 = errno;                  /* Rule 100 */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:212:16: warning: Rule 100: errno shall not be used
+  212 |     int err2 = errno;                  /* Rule 100 */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:216:26: warning: trigraph ignored [-Wtrigraphs]
+  216 |     const char* trig1 = "??=";        /* Rule 2 */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:217:26: warning: trigraph ignored [-Wtrigraphs]
+  217 |     const char* trig2 = "??<hello??>"; /* Rule 2 */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:217:34: warning: trigraph ignored [-Wtrigraphs]
+  217 |     const char* trig2 = "??<hello??>"; /* Rule 2 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:218:26: warning: trigraph ignored [-Wtrigraphs]
+  218 |     const char* trig3 = "??/path";    /* Rule 2 */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:254:11: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  254 |     if (x = 5) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |         ~~^~~
+C:\Users\nithi\drdoproject\test.cpp:254:11: note: place parentheses around the assignment to silence this warning
+  254 |     if (x = 5) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |           ^  
+      |         (    )
+C:\Users\nithi\drdoproject\test.cpp:254:11: note: use '==' to turn this assignment into an equality comparison
+  254 |     if (x = 5) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |           ^
+      |           ==
+C:\Users\nithi\drdoproject\test.cpp:255:11: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  255 |     if (x = 10) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |         ~~^~~~
+C:\Users\nithi\drdoproject\test.cpp:255:11: note: place parentheses around the assignment to silence this warning
+  255 |     if (x = 10) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |           ^   
+      |         (     )
+C:\Users\nithi\drdoproject\test.cpp:255:11: note: use '==' to turn this assignment into an equality comparison
+  255 |     if (x = 10) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |           ^
+      |           ==
+C:\Users\nithi\drdoproject\test.cpp:318:5: warning: switch condition has boolean value [-Wswitch-bool]
+  318 |     switch (sw > 0) { default: break; }  /* Rule 49 + Rule 50 */
+      |     ^       ~~~~~~
+C:\Users\nithi\drdoproject\test.cpp:319:5: warning: switch condition has boolean value [-Wswitch-bool]
+  319 |     switch (sw == 1) { default: break; }  /* Rule 49 + Rule 50 */
+      |     ^       ~~~~~~~
+C:\Users\nithi\drdoproject\test.cpp:390:35: warning: cast to smaller integer type 'int' from 'int *' [-Wpointer-to-int-cast]
+  390 |                         int pi1 = (int)pa;                /* Rule 124 */
+      |                                   ^~~~~~~
+C:\Users\nithi\drdoproject\test.cpp:391:35: warning: cast to smaller integer type 'int' from 'int *' [-Wpointer-to-int-cast]
+  391 |                         int pi2 = (int)pb;                /* Rule 124 */
+      |                                   ^~~~~~~
+C:\Users\nithi\drdoproject\test.cpp:561:5: error: redefinition of 'StatusCode' as different kind of symbol
+  561 | int StatusCode;                    /* Rule 11: var reuses typedef name */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:560:13: note: previous definition is here
+  560 | typedef int StatusCode;            /* typedef at file scope */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:564:6: error: redefinition of 'HandlerFn' as different kind of symbol
+  564 | void HandlerFn(void) {}            /* Rule 11: fn reuses typedef name + Rule 58 */
+      |      ^
+C:\Users\nithi\drdoproject\test.cpp:563:16: note: previous definition is here
+  563 | typedef void (*HandlerFn)(void);   /* typedef for fn pointer */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:673:22: warning: shift count is negative [-Wshift-count-negative]
+  673 |     int r134_a = val >> -1;        /* Rule 134 (negative constant RHS) */
+      |                      ^  ~~
+C:\Users\nithi\drdoproject\test.cpp:674:22: warning: shift count is negative [-Wshift-count-negative]
+  674 |     int r134_b = val << -2;        /* Rule 134 (negative constant RHS) */
+      |                      ^  ~~
+C:\Users\nithi\drdoproject\test.cpp:53:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   53 | int    g_count;                               /* Rule 200 + Rule 8 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:53:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:53:8: warning: Rule 19: External objects should not be declared in more than one file
+   53 | int    g_count;                               /* Rule 200 + Rule 8 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:54:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   54 | char   g_flag;                                /* Rule 200 + Rule 8 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:54:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:54:8: warning: Rule 19: External objects should not be declared in more than one file
+   54 | char   g_flag;                                /* Rule 200 + Rule 8 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:55:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   55 | double g_ratio;                               /* Rule 200 + Rule 8 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:55:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:55:8: warning: Rule 19: External objects should not be declared in more than one file
+   55 | double g_ratio;                               /* Rule 200 + Rule 8 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:58:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   58 | unsigned int  g_ucount;                       /* Rule 8 + Rule 200 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:58:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:58:15: warning: Rule 19: External objects should not be declared in more than one file
+   58 | unsigned int  g_ucount;                       /* Rule 8 + Rule 200 */
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:59:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   59 | unsigned char g_ubyte;                        /* Rule 8 + Rule 200 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:59:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:59:15: warning: Rule 19: External objects should not be declared in more than one file
+   59 | unsigned char g_ubyte;                        /* Rule 8 + Rule 200 */
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:62:1: warning: Rule 119: Incomplete array declarations are not permitted
+   62 | extern int  g_open_arr[];                     /* Rule 119 + Rule 18 + Rule 19 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:62:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:62:13: warning: Rule 18: An identifier with external linkage shall have exactly one external definition
+   62 | extern int  g_open_arr[];                     /* Rule 119 + Rule 18 + Rule 19 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:62:13: warning: Rule 19: External objects should not be declared in more than one file
+C:\Users\nithi\drdoproject\test.cpp:63:1: warning: Rule 119: Incomplete array declarations are not permitted
+   63 | extern char g_open_str[];                     /* Rule 119 + Rule 18 + Rule 19 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:63:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:63:13: warning: Rule 18: An identifier with external linkage shall have exactly one external definition
+   63 | extern char g_open_str[];                     /* Rule 119 + Rule 18 + Rule 19 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:63:13: warning: Rule 19: External objects should not be declared in more than one file
+C:\Users\nithi\drdoproject\test.cpp:66:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   66 | extern int  g_extern_a;                       /* Rule 18 + Rule 19 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:66:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:66:13: warning: Rule 18: An identifier with external linkage shall have exactly one external definition
+   66 | extern int  g_extern_a;                       /* Rule 18 + Rule 19 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:66:13: warning: Rule 19: External objects should not be declared in more than one file
+C:\Users\nithi\drdoproject\test.cpp:67:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   67 | extern int  g_extern_b;                       /* Rule 18 + Rule 19 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:67:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:67:13: warning: Rule 18: An identifier with external linkage shall have exactly one external definition
+   67 | extern int  g_extern_b;                       /* Rule 18 + Rule 19 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:67:13: warning: Rule 19: External objects should not be declared in more than one file
+C:\Users\nithi\drdoproject\test.cpp:70:1: warning: Rule 120: Array not fully initialized
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:70:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:70:1: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+C:\Users\nithi\drdoproject\test.cpp:70:17: warning: Rule 136: Magic number used; use symbolic constants instead
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      |                 ^
+C:\Users\nithi\drdoproject\test.cpp:70:24: warning: Rule 136: Magic number used; use symbolic constants instead
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:70:28: warning: Rule 136: Magic number used; use symbolic constants instead
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:70:24: warning: Rule 136: Magic number used; use symbolic constants instead
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:70:28: warning: Rule 136: Magic number used; use symbolic constants instead
+   70 | int  g_partial5[5] = { 10, 20 };               /* Rule 120 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:71:1: warning: Rule 120: Array not fully initialized
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:71:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:71:1: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+C:\Users\nithi\drdoproject\test.cpp:71:17: warning: Rule 136: Magic number used; use symbolic constants instead
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                 ^
+C:\Users\nithi\drdoproject\test.cpp:71:24: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:71:29: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:71:34: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:71:24: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:71:29: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:71:34: warning: Rule 129: Narrower int conversion without explicit cast
+   71 | char g_partial8[8] = { 'a', 'b', 'c' };        /* Rule 120 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:76:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   76 | int Buffer;                                   /* ordinary name "Buffer" */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:76:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:76:5: warning: Rule 19: External objects should not be declared in more than one file
+   76 | int Buffer;                                   /* ordinary name "Buffer" */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:77:8: warning: Rule 7: Identifier in tag namespace has same spelling as an identifier in another namespace
+   77 | struct Buffer { int x; int y; };             /* Rule 7: tag "Buffer" == var "Buffer" */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:79:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   79 | int Packet;                                   /* ordinary name "Packet" */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:79:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:79:5: warning: Rule 19: External objects should not be declared in more than one file
+   79 | int Packet;                                   /* ordinary name "Packet" */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:80:8: warning: Rule 7: Identifier in tag namespace has same spelling as an identifier in another namespace
+   80 | union  Packet { int  i; float f; };           /* Rule 7: tag "Packet" == var "Packet" */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:83:1: warning: Rule 28: A typedef name shall be a unique identifier
+   83 | typedef unsigned int  MyUint;                 /* Rule 28 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:84:1: warning: Rule 28: A typedef name shall be a unique identifier
+   84 | typedef unsigned char MyByte;                 /* Rule 28 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:85:1: warning: Rule 28: A typedef name shall be a unique identifier
+   85 | typedef int           MyInt;                  /* Rule 28 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:88:1: warning: Rule 29: An enum name shall be a unique identifier
+   88 | enum State { STATE_IDLE, STATE_RUN, STATE_DONE };   /* Rule 29 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:89:1: warning: Rule 29: An enum name shall be a unique identifier
+   89 | enum Color { COLOR_RED, COLOR_GREEN, COLOR_BLUE };  /* Rule 29 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:90:1: warning: Rule 29: An enum name shall be a unique identifier
+   90 | enum Parity { PARITY_NONE, PARITY_ODD, PARITY_EVEN };/* Rule 29 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:94:1: warning: Rule 29: An enum name shall be a unique identifier
+   94 | enum MixedA { MA_FIRST = 0, MA_SECOND, MA_THIRD = 10 }; /* Rule 24 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:94:1: warning: Rule 24: In an enumerator list, '=' shall not be used to explicitly initialise members other than the first, unless all items are explicitly initialised
+C:\Users\nithi\drdoproject\test.cpp:94:51: warning: Rule 136: Magic number used; use symbolic constants instead
+   94 | enum MixedA { MA_FIRST = 0, MA_SECOND, MA_THIRD = 10 }; /* Rule 24 */
+      |                                                   ^
+C:\Users\nithi\drdoproject\test.cpp:95:1: warning: Rule 29: An enum name shall be a unique identifier
+   95 | enum MixedB { MB_A = 5, MB_B, MB_C = 20, MB_D };        /* Rule 24 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:95:1: warning: Rule 24: In an enumerator list, '=' shall not be used to explicitly initialise members other than the first, unless all items are explicitly initialised
+C:\Users\nithi\drdoproject\test.cpp:95:22: warning: Rule 136: Magic number used; use symbolic constants instead
+   95 | enum MixedB { MB_A = 5, MB_B, MB_C = 20, MB_D };        /* Rule 24 */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:95:38: warning: Rule 136: Magic number used; use symbolic constants instead
+   95 | enum MixedB { MB_A = 5, MB_B, MB_C = 20, MB_D };        /* Rule 24 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:98:1: warning: Rule 28: A typedef name shall be a unique identifier
+   98 | typedef void (*VoidFn)(void);       /* Rule 28 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:99:1: warning: Rule 28: A typedef name shall be a unique identifier
+   99 | typedef int  (*IntFn)(int, int);    /* Rule 28 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:99:23: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   99 | typedef int  (*IntFn)(int, int);    /* Rule 28 */
+      |                       ^
+C:\Users\nithi\drdoproject\test.cpp:99:28: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+   99 | typedef int  (*IntFn)(int, int);    /* Rule 28 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:100:1: warning: Rule 200: Global variables should be avoided
+  100 | VoidFn g_fn1;                       /* Rule 86 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:100:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:100:8: warning: Rule 19: External objects should not be declared in more than one file
+  100 | VoidFn g_fn1;                       /* Rule 86 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:101:1: warning: Rule 200: Global variables should be avoided
+  101 | VoidFn g_fn2;                       /* Rule 86 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:101:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:101:8: warning: Rule 19: External objects should not be declared in more than one file
+  101 | VoidFn g_fn2;                       /* Rule 86 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:102:1: warning: Rule 200: Global variables should be avoided
+  102 | IntFn  g_fn3;                       /* Rule 86 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:102:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:102:8: warning: Rule 19: External objects should not be declared in more than one file
+  102 | IntFn  g_fn3;                       /* Rule 86 */
+      |        ^
+C:\Users\nithi\drdoproject\test.cpp:106:5: warning: Rule 93: Bit fields shall only be of type unsigned int or signed int
+  106 |     char         bf_char : 3;      /* Rule 93: not int/unsigned int */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:106:28: warning: Rule 136: Magic number used; use symbolic constants instead
+  106 |     char         bf_char : 3;      /* Rule 93: not int/unsigned int */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:107:5: warning: Rule 93: Bit fields shall only be of type unsigned int or signed int
+  107 |     short        bf_short : 2;      /* Rule 93: not int/unsigned int */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:107:29: warning: Rule 136: Magic number used; use symbolic constants instead
+  107 |     short        bf_short : 2;      /* Rule 93: not int/unsigned int */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:108:5: warning: Rule 93: Bit fields shall only be of type unsigned int or signed int
+  108 |     unsigned char bf_uc : 1;      /* Rule 93: not int/unsigned int */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:109:5: warning: Rule 94: Bit fields of signed int shall be at least 2 bits long
+  109 |     int          bf_s1 : 1;      /* Rule 94: signed int, width < 2 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:110:5: warning: Rule 94: Bit fields of signed int shall be at least 2 bits long
+  110 |     int          bf_s2 : 1;      /* Rule 94: signed int, width < 2 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:111:26: warning: Rule 136: Magic number used; use symbolic constants instead
+  111 |     unsigned int bf_ok : 4;      /* OK */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:115:1: warning: Rule 98: Standard library function names shall not be reused
+  115 | void strlen(const char* s) { (void)s; }       /* Rule 98 AST + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:115:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:115:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:116:1: warning: Rule 98: Standard library function names shall not be reused
+  116 | void memcpy(void* d, const void* s, unsigned n)
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:116:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:116:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:116:37: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  116 | void memcpy(void* d, const void* s, unsigned n)
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:122:1: warning: Rule 56: Functions with variable number of arguments shall not be used
+  122 | void var_logger(int level, ...) { (void)level; }   /* Rule 56 decl + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:122:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:122:17: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  122 | void var_logger(int level, ...) { (void)level; }   /* Rule 56 decl + Rule 58 */
+      |                 ^
+C:\Users\nithi\drdoproject\test.cpp:123:1: warning: Rule 59: Every function shall have an explicit return type
+  123 | int  var_sum(int count, ...) { (void)count; return 0; } /* Rule 56 decl + Rule 58 + Rule 59 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:123:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:123:1: warning: Rule 56: Functions with variable number of arguments shall not be used
+C:\Users\nithi\drdoproject\test.cpp:123:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:123:14: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  123 | int  var_sum(int count, ...) { (void)count; return 0; } /* Rule 56 decl + Rule 58 + Rule 59 */
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:129:24: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  129 | int  func_with_proto_b(int x);
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:130:26: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  130 | static void helper_proto(int v);
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:137:1: warning: Rule 12: Every defined function shall be called at least once
+  137 | static void never_called_a(void)       /* Rule 12 + Rule 58 (no proto before this static) */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:137:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:139:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  139 |     int dead1 = 0;                     /* Rule 4 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:140:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  140 |     char dead2 = 'X';                  /* Rule 4 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:140:18: warning: Rule 129: Narrower int conversion without explicit cast
+  140 |     char dead2 = 'X';                  /* Rule 4 + Rule 8 */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:145:1: warning: Rule 12: Every defined function shall be called at least once
+  145 | static void never_called_b(void)       /* Rule 12 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:145:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:148:5: warning: Rule 139: Float value cast to non-float type
+  148 |     (void)dead3;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:147:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  147 |     double dead3 = 0.0;                /* Rule 4 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 59: Every function shall have an explicit return type
+  161 | int factorial(int n)                   /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 196: Function shall have a single point of exit
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 64: At most one return statement per function
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:161:15: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  161 | int factorial(int n)                   /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:163:5: warning: Rule 46: if/else-if must have a final else clause
+  163 |     if (n <= 1) { return 1; }         /* first return */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:161:1: warning: Rule 57: It is not recommended to use recursion
+  161 | int factorial(int n)                   /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 59: Every function shall have an explicit return type
+  168 | int fib(int n)                         /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 196: Function shall have a single point of exit
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 64: At most one return statement per function
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:168:9: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  168 | int fib(int n)                         /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:170:5: warning: Rule 46: if/else-if must have a final else clause
+  170 |     if (n <= 1) { return n; }
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 57: It is not recommended to use recursion
+  168 | int fib(int n)                         /* Rule 59 + Rule 57 + Rule 64 + Rule 196 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:168:1: warning: Rule 57: It is not recommended to use recursion
+C:\Users\nithi\drdoproject\test.cpp:171:33: warning: Rule 136: Magic number used; use symbolic constants instead
+  171 |     return fib(n - 1) + fib(n - 2);  /* Rule 57 */
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:175:1: warning: Rule 59: Every function shall have an explicit return type
+  175 | int classify(int a, int b, int c, int d)  /* Rule 59 + Rule 55 + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:175:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:175:1: warning: Rule 55: Functions shall have a cyclomatic complexity number of 10 or less
+C:\Users\nithi\drdoproject\test.cpp:175:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:175:14: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  175 | int classify(int a, int b, int c, int d)  /* Rule 59 + Rule 55 + Rule 58 */
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:175:21: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  175 | int classify(int a, int b, int c, int d)  /* Rule 59 + Rule 55 + Rule 58 */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:175:28: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  175 | int classify(int a, int b, int c, int d)  /* Rule 59 + Rule 55 + Rule 58 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:175:35: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  175 | int classify(int a, int b, int c, int d)  /* Rule 59 + Rule 55 + Rule 58 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:178:5: warning: Rule 46: if/else-if must have a final else clause
+  178 |     if (a > 0)   r++;                 /* branch 1  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:178:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:179:5: warning: Rule 46: if/else-if must have a final else clause
+  179 |     if (b > 0)   r++;                 /* branch 2  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:179:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:180:5: warning: Rule 46: if/else-if must have a final else clause
+  180 |     if (c > 0)   r++;                 /* branch 3  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:180:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:181:5: warning: Rule 46: if/else-if must have a final else clause
+  181 |     if (d > 0)   r++;                 /* branch 4  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:181:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:182:5: warning: Rule 46: if/else-if must have a final else clause
+  182 |     if (a < 100) r++;                 /* branch 5  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:182:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:183:5: warning: Rule 46: if/else-if must have a final else clause
+  183 |     if (b < 100) r++;                 /* branch 6  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:183:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:184:5: warning: Rule 46: if/else-if must have a final else clause
+  184 |     if (c < 100) r++;                 /* branch 7  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:184:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:185:5: warning: Rule 46: if/else-if must have a final else clause
+  185 |     if (d < 100) r++;                 /* branch 8  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:185:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:186:5: warning: Rule 46: if/else-if must have a final else clause
+  186 |     if (a == b)  r++;                 /* branch 9  */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:186:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:187:5: warning: Rule 46: if/else-if must have a final else clause
+  187 |     if (b == c)  r++;                 /* branch 10 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:187:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:188:5: warning: Rule 46: if/else-if must have a final else clause
+  188 |     if (c == d)  r++;                 /* branch 11 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:188:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:177:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  177 |     int r = 0;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:182:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  182 |     if (a < 100) r++;                 /* branch 5  */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:183:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  183 |     if (b < 100) r++;                 /* branch 6  */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:184:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  184 |     if (c < 100) r++;                 /* branch 7  */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:185:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  185 |     if (d < 100) r++;                 /* branch 8  */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:193:1: warning: Rule 12: Every defined function shall be called at least once
+  193 | void func_with_proto_a(void) {        /* no Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:197:1: warning: Rule 59: Every function shall have an explicit return type
+  197 | int func_with_proto_b(int x) {        /* Rule 59; no Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:197:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:197:23: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  197 | int func_with_proto_b(int x) {        /* Rule 59; no Rule 58 */
+      |                       ^
+C:\Users\nithi\drdoproject\test.cpp:201:1: warning: Rule 12: Every defined function shall be called at least once
+  201 | static void helper_proto(int v) {     /* no Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:201:26: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  201 | static void helper_proto(int v) {     /* no Rule 58 */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:271:5: warning: Rule 39: No inaccessible code after a goto or return statement
+  271 |     goto lbl_b;                        /* Rule 43 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:235:5: warning: Rule 139: Float value cast to non-float type
+  235 |     (void)plain_dbl; (void)plain_uint; (void)plain_uchar;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:250:29: warning: Rule 139: Float value cast to non-float type
+  250 |     (void)suf1; (void)suf2; (void)suf3; (void)suf4; (void)suf5; (void)suf6;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:250:41: warning: Rule 139: Float value cast to non-float type
+  250 |     (void)suf1; (void)suf2; (void)suf3; (void)suf4; (void)suf5; (void)suf6;
+      |                                         ^
+C:\Users\nithi\drdoproject\test.cpp:254:5: warning: Rule 46: if/else-if must have a final else clause
+  254 |     if (x = 5) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:255:5: warning: Rule 46: if/else-if must have a final else clause
+  255 |     if (x = 10) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:259:5: warning: Rule 46: if/else-if must have a final else clause
+  259 |     if (f1 == 1.0F) { f1 = 0.0F; }   /* Rule 38 + Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:260:5: warning: Rule 46: if/else-if must have a final else clause
+  260 |     if (f2 != 0.0F) { f2 = 0.0F; }   /* Rule 38 + Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:261:5: warning: Rule 139: Float value cast to non-float type
+  261 |     (void)f1; (void)f2;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:261:15: warning: Rule 139: Float value cast to non-float type
+  261 |     (void)f1; (void)f2;
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:264:5: warning: Rule 41: Null statement shall only occur on a line by itself
+  264 |     ;                                  /* Rule 41 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:265:5: warning: Rule 41: Null statement shall only occur on a line by itself
+  265 |     ;                                  /* Rule 41 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:266:5: warning: Rule 41: Null statement shall only occur on a line by itself
+  266 |     ;                                  /* Rule 41 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:269:5: warning: Rule 43: goto statement is prohibited
+  269 |     goto lbl_a;                        /* Rule 43 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:271:5: warning: Rule 43: goto statement is prohibited
+  271 |     goto lbl_b;                        /* Rule 43 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:292:5: warning: Rule 46: if/else-if must have a final else clause
+  292 |     if (v > 0)  v++;                   /* Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:292:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:293:5: warning: Rule 46: if/else-if must have a final else clause
+  293 |     if (v > 1)  v--;                   /* Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:293:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:294:5: warning: Rule 46: if/else-if must have a final else clause
+  294 |     if (v == 0) v = 1;                 /* Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:294:5: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:299:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  299 |     case 1:                        /* Rule 47: falls through to case 2 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:301:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  301 |     case 2:                        /* Rule 47: falls through to case 3 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:303:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  303 |     case 3:
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:309:5: warning: Rule 48/113: switch must have a default clause
+  309 |     switch (sw) {                      /* Rule 48 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:310:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  310 |     case 1: sw = 1; break;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:311:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  311 |     case 2: sw = 2; break;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:313:5: warning: Rule 48/113: switch must have a default clause
+  313 |     switch (v) {                       /* Rule 48 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:314:5: warning: Rule 47: The break statement shall be the last statement in each case clause of a switch statement
+  314 |     case 0: v = 1; break;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:318:5: warning: Rule 50: switch must have at least one case
+  318 |     switch (sw > 0) { default: break; }  /* Rule 49 + Rule 50 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:319:5: warning: Rule 50: switch must have at least one case
+  319 |     switch (sw == 1) { default: break; }  /* Rule 49 + Rule 50 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:322:5: warning: Rule 50: switch must have at least one case
+  322 |     switch (sw) { default: sw = 0; break; }   /* Rule 50 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:323:5: warning: Rule 50: switch must have at least one case
+  323 |     switch (v) { default: v = 0; break; }   /* Rule 50 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:326:25: warning: Rule 48/113: switch must have a default clause
+  326 |                         switch (sw) {}                    /* Rule 143 + Rule 48 + Rule 50 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:326:25: warning: Rule 50: switch must have at least one case
+C:\Users\nithi\drdoproject\test.cpp:326:25: warning: Rule 143: Empty switch statement
+C:\Users\nithi\drdoproject\test.cpp:327:25: warning: Rule 48/113: switch must have a default clause
+  327 |                         switch (v) {}                    /* Rule 143 + Rule 48 + Rule 50 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:327:25: warning: Rule 50: switch must have at least one case
+C:\Users\nithi\drdoproject\test.cpp:327:25: warning: Rule 143: Empty switch statement
+C:\Users\nithi\drdoproject\test.cpp:330:25: warning: Rule 188: for loop shall not have a float loop counter
+  330 |                         for (float fc1 = 0.0F; fc1 < 10.0F; fc1 += 1.0F) {  /* Rule 51 + Rule 188 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:333:25: warning: Rule 188: for loop shall not have a float loop counter
+  333 |                         for (double dc1 = 0.0; dc1 < 5.0; dc1 += 0.5) {      /* Rule 51 + Rule 188 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:338:25: warning: Rule 53: The counter in a for statement must not be modified inside the loop body
+  338 |                         for (int j = 0; j < 8; j++) {
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:341:25: warning: Rule 53: The counter in a for statement must not be modified inside the loop body
+  341 |                         for (int k = 0; k < 10; k++) {
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:362:25: warning: Rule 99: Dynamic memory allocation shall not be used
+  362 |                         free(m2);                          /* Rule 99 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:363:25: warning: Rule 99: Dynamic memory allocation shall not be used
+  363 |                         free(m3);                          /* Rule 99 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:366:25: warning: Rule 105: signal.h facilities shall not be used
+  366 |                         signal(SIGINT, SIG_DFL);         /* Rule 105 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:367:25: warning: Rule 105: signal.h facilities shall not be used
+  367 |                         signal(SIGTERM, SIG_IGN);         /* Rule 105 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:370:25: warning: Rule 106: stdio.h shall not be used in production code
+  370 |                         printf("val=%d\n", v);            /* Rule 106 + Rule 56 call (variadic!) */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:370:25: warning: Rule 56: Functions with variable number of arguments shall not be used
+C:\Users\nithi\drdoproject\test.cpp:371:25: warning: Rule 106: stdio.h shall not be used in production code
+  371 |                         fprintf(stderr, "err=%d\n", sw);  /* Rule 106 + Rule 56 call */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:371:25: warning: Rule 56: Functions with variable number of arguments shall not be used
+C:\Users\nithi\drdoproject\test.cpp:372:25: warning: Rule 106: stdio.h shall not be used in production code
+  372 |                         puts("done");                      /* Rule 106 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:378:55: warning: Rule 139: Float value cast to non-float type
+  378 |                         (void)parsed1; (void)parsed2; (void)parsed3;
+      |                                                       ^
+C:\Users\nithi\drdoproject\test.cpp:381:25: warning: Rule 46: if/else-if must have a final else clause
+  381 |                         if (0) { exit(0); }              /* Rule 108 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:381:25: warning: Rule 126: Construct leads to infeasible code â€” branch condition evaluates to a constant value
+C:\Users\nithi\drdoproject\test.cpp:382:25: warning: Rule 46: if/else-if must have a final else clause
+  382 |                         if (0) { abort(); }              /* Rule 108 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:382:25: warning: Rule 126: Construct leads to infeasible code â€” branch condition evaluates to a constant value
+C:\Users\nithi\drdoproject\test.cpp:403:36: warning: Rule 139: Float value cast to non-float type
+  403 |                         (void)ci1; (void)dc3;
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:409:25: warning: Rule 139: Float value cast to non-float type
+  409 |                         (void)ff1; (void)ff2;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:409:36: warning: Rule 139: Float value cast to non-float type
+  409 |                         (void)ff1; (void)ff2;
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:415:25: warning: Rule 139: Float value cast to non-float type
+  415 |                         (void)nf1; (void)nf2;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:415:36: warning: Rule 139: Float value cast to non-float type
+  415 |                         (void)nf1; (void)nf2;
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:450:25: warning: Rule 46: if/else-if must have a final else clause
+  450 |                         if (a && b) { a = 0; }     /* Rule 165 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:451:25: warning: Rule 46: if/else-if must have a final else clause
+  451 |                         if (a || c) { a = 0; }     /* Rule 165 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:452:25: warning: Rule 46: if/else-if must have a final else clause
+  452 |                         if (a && b && c) { a = 0; }     /* Rule 165 (two && nodes) */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:457:25: warning: Rule 46: if/else-if must have a final else clause
+  457 |                         if (p && q++) { p = 0; }         /* Rule 25 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:458:25: warning: Rule 46: if/else-if must have a final else clause
+  458 |                         if (p || ++q) { p = 0; }        /* Rule 25 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:475:25: warning: Rule 46: if/else-if must have a final else clause
+  475 |                         if (rv > 0) rv++;                 /* Rule 181 + Rule 46 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:475:25: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:476:25: warning: Rule 46: if/else-if must have a final else clause
+  476 |                         if (rv > 1) rv--;                 /* Rule 181 + Rule 46 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:476:25: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:477:25: warning: Rule 46: if/else-if must have a final else clause
+  477 |                         if (rv == 2) rv = 0;              /* Rule 181 + Rule 46 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:477:25: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:481:25: warning: Rule 182: else must be followed by compound statement {}
+  481 |                         if (ev > 0) { ev++; }
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:483:25: warning: Rule 182: else must be followed by compound statement {}
+  483 |                         if (ev > 5) { ev = 0; }
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:488:25: warning: Rule 195: No more than one break statement per loop
+  488 |                         for (int k2 = 0; k2 < 10; k2++) {
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:493:25: warning: Rule 195: No more than one break statement per loop
+  493 |                         while (w2 < 20) {
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:532:25: warning: Rule 56: Functions with variable number of arguments shall not be used
+  532 |                         var_logger(1, 42, 99);             /* Rule 56 call */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:533:25: warning: Rule 56: Functions with variable number of arguments shall not be used
+  533 |                         var_logger(2, 10, 20, 30);        /* Rule 56 call */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:541:25: warning: Rule 139: Float value cast to non-float type
+  541 |                         (void)fc3; (void)arr; (void)pa; (void)pb; (void)pc;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:542:47: warning: Rule 139: Float value cast to non-float type
+  542 |                         (void)ll1; (void)ll2; (void)dd1; (void)dd2; (void)dv1; (void)dv2;
+      |                                               ^
+C:\Users\nithi\drdoproject\test.cpp:542:58: warning: Rule 139: Float value cast to non-float type
+  542 |                         (void)ll1; (void)ll2; (void)dd1; (void)dd2; (void)dv1; (void)dv2;
+      |                                                          ^
+C:\Users\nithi\drdoproject\test.cpp:542:69: warning: Rule 139: Float value cast to non-float type
+  542 |                         (void)ll1; (void)ll2; (void)dd1; (void)dd2; (void)dv1; (void)dv2;
+      |                                                                     ^
+C:\Users\nithi\drdoproject\test.cpp:542:80: warning: Rule 139: Float value cast to non-float type
+  542 |                         (void)ll1; (void)ll2; (void)dd1; (void)dd2; (void)dv1; (void)dv2;
+      |                                                                                ^
+C:\Users\nithi\drdoproject\test.cpp:544:54: warning: Rule 139: Float value cast to non-float type
+  544 |                         (void)g_count; (void)g_flag; (void)g_ratio;
+      |                                                      ^
+C:\Users\nithi\drdoproject\test.cpp:211:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  211 |     int err1 = errno;                  /* Rule 100 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:212:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  212 |     int err2 = errno;                  /* Rule 100 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:216:25: warning: Rule 2: Trigraphs shall not be used
+  216 |     const char* trig1 = "??=";        /* Rule 2 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:217:25: warning: Rule 2: Trigraphs shall not be used
+  217 |     const char* trig2 = "??<hello??>"; /* Rule 2 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:218:25: warning: Rule 2: Trigraphs shall not be used
+  218 |     const char* trig3 = "??/path";    /* Rule 2 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:222:24: warning: Rule 130: Use of digraph characters is not permitted
+  222 |     const char* dig1 = "<:array:>";   /* Rule 130 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:223:24: warning: Rule 130: Use of digraph characters is not permitted
+  223 |     const char* dig2 = "<%block%>";   /* Rule 130 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:227:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  227 |     int           plain_int = 0;    /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:228:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  228 |     char          plain_char = 0;    /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:228:32: warning: Rule 129: Narrower int conversion without explicit cast
+  228 |     char          plain_char = 0;    /* Rule 8 */
+      |                                ^
+C:\Users\nithi\drdoproject\test.cpp:229:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  229 |     short         plain_short = 0;    /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:229:33: warning: Rule 129: Narrower int conversion without explicit cast
+  229 |     short         plain_short = 0;    /* Rule 8 */
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:230:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  230 |     long          plain_long = 0L;   /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:231:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  231 |     double        plain_dbl = 0.0;  /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:232:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  232 |     unsigned int  plain_uint = 0U;   /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:233:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  233 |     unsigned char plain_uchar = 0U;   /* Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:233:33: warning: Rule 129: Narrower int conversion without explicit cast
+  233 |     unsigned char plain_uchar = 0U;   /* Rule 8 */
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:238:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  238 |     int oct1 = 07;                     /* Rule 13 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:238:16: warning: Rule 136: Magic number used; use symbolic constants instead
+  238 |     int oct1 = 07;                     /* Rule 13 + Rule 8 */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:238:16: warning: Rule 13: Octal constants other than zero shall not be used
+C:\Users\nithi\drdoproject\test.cpp:239:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  239 |     int oct2 = 011;                    /* Rule 13 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:239:16: warning: Rule 136: Magic number used; use symbolic constants instead
+  239 |     int oct2 = 011;                    /* Rule 13 + Rule 8 */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:239:16: warning: Rule 13: Octal constants other than zero shall not be used
+C:\Users\nithi\drdoproject\test.cpp:240:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  240 |     int oct3 = 0755;                   /* Rule 13 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:240:16: warning: Rule 136: Magic number used; use symbolic constants instead
+  240 |     int oct3 = 0755;                   /* Rule 13 + Rule 8 */
+      |                ^
+C:\Users\nithi\drdoproject\test.cpp:240:16: warning: Rule 13: Octal constants other than zero shall not be used
+C:\Users\nithi\drdoproject\test.cpp:244:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  244 |     long         suf1 = 10l;          /* Rule 34 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:244:25: warning: Rule 34: Literal suffixes shall be upper case (use L, U, UL, LL, ULL instead of l, u, ul, ll, ull)
+  244 |     long         suf1 = 10l;          /* Rule 34 + Rule 8 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:244:25: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:245:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  245 |     long         suf2 = 20l;          /* Rule 34 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:245:25: warning: Rule 34: Literal suffixes shall be upper case (use L, U, UL, LL, ULL instead of l, u, ul, ll, ull)
+  245 |     long         suf2 = 20l;          /* Rule 34 + Rule 8 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:245:25: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:246:25: warning: Rule 34: Literal suffixes shall be upper case (use F, L instead of f, l)
+  246 |     float        suf3 = 1.0f;         /* Rule 34 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:247:25: warning: Rule 34: Literal suffixes shall be upper case (use F, L instead of f, l)
+  247 |     float        suf4 = 2.5f;         /* Rule 34 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:248:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  248 |     unsigned int suf5 = 5u;           /* Rule 34 + Rule 8 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:248:25: warning: Rule 34: Literal suffixes shall be upper case (use L, U, UL, LL, ULL instead of l, u, ul, ll, ull)
+  248 |     unsigned int suf5 = 5u;           /* Rule 34 + Rule 8 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:248:25: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:249:25: warning: Rule 34: Literal suffixes shall be upper case (use L, U, UL, LL, ULL instead of l, u, ul, ll, ull)
+  249 |     long long    suf6 = 100ll;        /* Rule 34 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:249:25: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:253:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  253 |     int x = 0;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:254:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  254 |     if (x = 5) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:255:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  255 |     if (x = 10) { x = 0; }           /* Rule 27 + Rule 46 + Rule 181 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:259:9: warning: Rule 38: Floating point shall not be tested for exact equality or inequality
+  259 |     if (f1 == 1.0F) { f1 = 0.0F; }   /* Rule 38 + Rule 46 + Rule 181 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:260:9: warning: Rule 38: Floating point shall not be tested for exact equality or inequality
+  260 |     if (f2 != 0.0F) { f2 = 0.0F; }   /* Rule 38 + Rule 46 + Rule 181 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:270:7: warning: Rule 41: Null statement shall only occur on a line by itself
+  270 | lbl_a:;
+      |       ^
+C:\Users\nithi\drdoproject\test.cpp:272:7: warning: Rule 41: Null statement shall only occur on a line by itself
+  272 | lbl_b:;
+      |       ^
+C:\Users\nithi\drdoproject\test.cpp:275:10: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  275 |     for (int i = 0; i < 10; i++) {
+      |          ^
+C:\Users\nithi\drdoproject\test.cpp:275:25: warning: Rule 136: Magic number used; use symbolic constants instead
+  275 |     for (int i = 0; i < 10; i++) {
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:276:9: warning: Rule 46: if/else-if must have a final else clause
+  276 |         if (i == 2) break;             /* Rule 44 break */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:276:9: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:277:9: warning: Rule 46: if/else-if must have a final else clause
+  277 |         if (i == 5) continue;          /* Rule 44 continue */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:277:9: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:276:21: warning: Rule 44: break is forbidden in loops
+  276 |         if (i == 2) break;             /* Rule 44 break */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:276:18: warning: Rule 136: Magic number used; use symbolic constants instead
+  276 |         if (i == 2) break;             /* Rule 44 break */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:277:21: warning: Rule 44: continue is forbidden in loops
+  277 |         if (i == 5) continue;          /* Rule 44 continue */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:277:18: warning: Rule 136: Magic number used; use symbolic constants instead
+  277 |         if (i == 5) continue;          /* Rule 44 continue */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:279:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  279 |     int wv = 0;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:280:17: warning: Rule 136: Magic number used; use symbolic constants instead
+  280 |     while (wv < 5) {
+      |                 ^
+C:\Users\nithi\drdoproject\test.cpp:281:9: warning: Rule 46: if/else-if must have a final else clause
+  281 |         if (wv == 2) break;            /* Rule 44 break (while) */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:281:9: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:281:22: warning: Rule 44: break is forbidden in loops
+  281 |         if (wv == 2) break;            /* Rule 44 break (while) */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:281:19: warning: Rule 136: Magic number used; use symbolic constants instead
+  281 |         if (wv == 2) break;            /* Rule 44 break (while) */
+      |                   ^
+C:\Users\nithi\drdoproject\test.cpp:285:9: warning: Rule 46: if/else-if must have a final else clause
+  285 |         if (wv == 0) continue;         /* Rule 44 continue (do-while) */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:285:9: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:285:22: warning: Rule 44: continue is forbidden in loops
+  285 |         if (wv == 0) continue;         /* Rule 44 continue (do-while) */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:291:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  291 |     int v = 1;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:297:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  297 |     int sw = 2;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:297:14: warning: Rule 136: Magic number used; use symbolic constants instead
+  297 |     int sw = 2;
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:300:14: warning: Rule 136: Magic number used; use symbolic constants instead
+  300 |         sw = 10;
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:301:10: warning: Rule 136: Magic number used; use symbolic constants instead
+  301 |     case 2:                        /* Rule 47: falls through to case 3 */
+      |          ^
+C:\Users\nithi\drdoproject\test.cpp:302:14: warning: Rule 136: Magic number used; use symbolic constants instead
+  302 |         sw = 20;
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:303:10: warning: Rule 136: Magic number used; use symbolic constants instead
+  303 |     case 3:
+      |          ^
+C:\Users\nithi\drdoproject\test.cpp:304:14: warning: Rule 136: Magic number used; use symbolic constants instead
+  304 |         sw = 30; break;
+      |              ^
+C:\Users\nithi\drdoproject\test.cpp:311:10: warning: Rule 136: Magic number used; use symbolic constants instead
+  311 |     case 2: sw = 2; break;
+      |          ^
+C:\Users\nithi\drdoproject\test.cpp:311:18: warning: Rule 136: Magic number used; use symbolic constants instead
+  311 |     case 2: sw = 2; break;
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:330:30: warning: Rule 51: No floating point variables as loop counters
+  330 |                         for (float fc1 = 0.0F; fc1 < 10.0F; fc1 += 1.0F) {  /* Rule 51 + Rule 188 */
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:331:29: warning: Rule 139: Float value cast to non-float type
+  331 |                             (void)fc1;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:333:30: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  333 |                         for (double dc1 = 0.0; dc1 < 5.0; dc1 += 0.5) {      /* Rule 51 + Rule 188 */
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:333:30: warning: Rule 51: No floating point variables as loop counters
+C:\Users\nithi\drdoproject\test.cpp:334:29: warning: Rule 139: Float value cast to non-float type
+  334 |                             (void)dc1;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:338:30: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  338 |                         for (int j = 0; j < 8; j++) {
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:338:45: warning: Rule 136: Magic number used; use symbolic constants instead
+  338 |                         for (int j = 0; j < 8; j++) {
+      |                                             ^
+C:\Users\nithi\drdoproject\test.cpp:339:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  339 |                             j = j + 2;                     /* Rule 53 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:341:30: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  341 |                         for (int k = 0; k < 10; k++) {
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:341:45: warning: Rule 136: Magic number used; use symbolic constants instead
+  341 |                         for (int k = 0; k < 10; k++) {
+      |                                             ^
+C:\Users\nithi\drdoproject\test.cpp:346:25: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:346:33: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:346:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:346:46: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                              ^
+C:\Users\nithi\drdoproject\test.cpp:346:49: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                 ^
+C:\Users\nithi\drdoproject\test.cpp:346:52: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                    ^
+C:\Users\nithi\drdoproject\test.cpp:346:55: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                       ^
+C:\Users\nithi\drdoproject\test.cpp:346:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:346:46: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                              ^
+C:\Users\nithi\drdoproject\test.cpp:346:49: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                 ^
+C:\Users\nithi\drdoproject\test.cpp:346:52: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                    ^
+C:\Users\nithi\drdoproject\test.cpp:346:55: warning: Rule 136: Magic number used; use symbolic constants instead
+  346 |                         int arr[6] = { 1, 2, 3, 4, 5, 6 };
+      |                                                       ^
+C:\Users\nithi\drdoproject\test.cpp:348:35: warning: Rule 83: Pointer arithmetic should not be used
+  348 |                         int* pb = pa + 2;                  /* Rule 83 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:348:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  348 |                         int* pb = pa + 2;                  /* Rule 83 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:349:35: warning: Rule 83: Pointer arithmetic should not be used
+  349 |                         int* pc = pb - 1;                  /* Rule 83 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:350:35: warning: Rule 83: Pointer arithmetic should not be used
+  350 |                         int* pd = pc + 3;                  /* Rule 83 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:350:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  350 |                         int* pd = pc + 3;                  /* Rule 83 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:359:36: warning: Rule 99: Dynamic memory allocation shall not be used
+  359 |                         void* m1 = malloc(32);            /* Rule 99 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:359:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  359 |                         void* m1 = malloc(32);            /* Rule 99 */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:360:36: warning: Rule 99: Dynamic memory allocation shall not be used
+  360 |                         void* m2 = calloc(8, 4);         /* Rule 99 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:360:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  360 |                         void* m2 = calloc(8, 4);         /* Rule 99 */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:360:46: warning: Rule 136: Magic number used; use symbolic constants instead
+  360 |                         void* m2 = calloc(8, 4);         /* Rule 99 */
+      |                                              ^
+C:\Users\nithi\drdoproject\test.cpp:361:36: warning: Rule 99: Dynamic memory allocation shall not be used
+  361 |                         void* m3 = realloc(m1, 64);      /* Rule 99 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:361:48: warning: Rule 136: Magic number used; use symbolic constants instead
+  361 |                         void* m3 = realloc(m1, 64);      /* Rule 99 */
+      |                                                ^
+C:\Users\nithi\drdoproject\test.cpp:366:32: warning: Rule 136: Magic number used; use symbolic constants instead
+  366 |                         signal(SIGINT, SIG_DFL);         /* Rule 105 */
+      |                                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\signal.h:29:25: note: expanded from macro 'SIGINT'
+   29 | #define SIGINT          2   // interrupt
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:367:32: warning: Rule 136: Magic number used; use symbolic constants instead
+  367 |                         signal(SIGTERM, SIG_IGN);         /* Rule 105 */
+      |                                ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\signal.h:33:25: note: expanded from macro 'SIGTERM'
+   33 | #define SIGTERM         15  // Software termination signal from kill
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:371:33: warning: Rule 136: Magic number used; use symbolic constants instead
+  371 |                         fprintf(stderr, "err=%d\n", sw);  /* Rule 106 + Rule 56 call */
+      |                                 ^
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\corecrt_wstdio.h:38:33: note: expanded from macro 'stderr'
+   38 | #define stderr (__acrt_iob_func(2))
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:375:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  375 |                         int   parsed1 = atoi("42");       /* Rule 107 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:375:41: warning: Rule 107: atof/atoi/atol shall not be used
+  375 |                         int   parsed1 = atoi("42");       /* Rule 107 */
+      |                                         ^
+C:\Users\nithi\drdoproject\test.cpp:376:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  376 |                         long  parsed2 = atol("1000");     /* Rule 107 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:376:41: warning: Rule 107: atof/atoi/atol shall not be used
+  376 |                         long  parsed2 = atol("1000");     /* Rule 107 */
+      |                                         ^
+C:\Users\nithi\drdoproject\test.cpp:377:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  377 |                         double parsed3 = atof("3.14");    /* Rule 107 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:377:42: warning: Rule 107: atof/atoi/atol shall not be used
+  377 |                         double parsed3 = atof("3.14");    /* Rule 107 */
+      |                                          ^
+C:\Users\nithi\drdoproject\test.cpp:381:34: warning: Rule 108: abort/exit/getenv/system shall not be used
+  381 |                         if (0) { exit(0); }              /* Rule 108 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:382:34: warning: Rule 108: abort/exit/getenv/system shall not be used
+  382 |                         if (0) { abort(); }              /* Rule 108 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:385:37: warning: Rule 123: Cast from integer to pointer shall not be performed
+  385 |                         void* vp1 = (void*)42;            /* Rule 123 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:385:44: warning: Rule 136: Magic number used; use symbolic constants instead
+  385 |                         void* vp1 = (void*)42;            /* Rule 123 */
+      |                                            ^
+C:\Users\nithi\drdoproject\test.cpp:386:37: warning: Rule 123: Cast from integer to pointer shall not be performed
+  386 |                         void* vp2 = (void*)0xDEADU;      /* Rule 123 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:386:44: warning: Rule 136: Magic number used; use symbolic constants instead
+  386 |                         void* vp2 = (void*)0xDEADU;      /* Rule 123 */
+      |                                            ^
+C:\Users\nithi\drdoproject\test.cpp:390:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  390 |                         int pi1 = (int)pa;                /* Rule 124 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:390:35: warning: Rule 124: Pointer cast to integer is not allowed
+  390 |                         int pi1 = (int)pa;                /* Rule 124 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:391:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  391 |                         int pi2 = (int)pb;                /* Rule 124 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:391:35: warning: Rule 124: Pointer cast to integer is not allowed
+  391 |                         int pi2 = (int)pb;                /* Rule 124 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:395:36: warning: Rule 161: Invalid pointer conversion from void pointer
+  395 |                         int* pp1 = (int*)vp1;            /* Rule 161 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:396:37: warning: Rule 161: Invalid pointer conversion from void pointer
+  396 |                         char* pp2 = (char*)vp1;           /* Rule 161 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:401:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  401 |                         int    ci1 = (v > 0) ? fc3 : 10;           /* Rule 125 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:401:38: warning: Rule 125: Conditional operator has incompatible types
+  401 |                         int    ci1 = (v > 0) ? fc3 : 10;           /* Rule 125 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:401:54: warning: Rule 127: Implicit integer to float conversion
+  401 |                         int    ci1 = (v > 0) ? fc3 : 10;           /* Rule 125 */
+      |                                                      ^
+C:\Users\nithi\drdoproject\test.cpp:401:54: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:402:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  402 |                         double dc3 = (v > 0) ? (float)0.5F : 100;  /* Rule 125 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:402:38: warning: Rule 125: Conditional operator has incompatible types
+  402 |                         double dc3 = (v > 0) ? (float)0.5F : 100;  /* Rule 125 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:402:62: warning: Rule 127: Implicit integer to float conversion
+  402 |                         double dc3 = (v > 0) ? (float)0.5F : 100;  /* Rule 125 */
+      |                                                              ^
+C:\Users\nithi\drdoproject\test.cpp:402:62: warning: Rule 136: Magic number used; use symbolic constants instead
+C:\Users\nithi\drdoproject\test.cpp:406:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  406 |                         int   ii1 = 7, ii2 = 3;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:406:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  406 |                         int   ii1 = 7, ii2 = 3;
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:406:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  406 |                         int   ii1 = 7, ii2 = 3;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:406:46: warning: Rule 136: Magic number used; use symbolic constants instead
+  406 |                         int   ii1 = 7, ii2 = 3;
+      |                                              ^
+C:\Users\nithi\drdoproject\test.cpp:407:37: warning: Rule 127: Implicit integer to float conversion
+  407 |                         float ff1 = ii1;                  /* Rule 127 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:408:37: warning: Rule 127: Implicit integer to float conversion
+  408 |                         float ff2 = ii2;                  /* Rule 127 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:412:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  412 |                         double dd1 = 3.14159, dd2 = 2.71828;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:412:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:413:38: warning: Rule 128: Narrower float conversion without explicit cast
+  413 |                         float  nf1 = dd1;                 /* Rule 128 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:414:38: warning: Rule 128: Narrower float conversion without explicit cast
+  414 |                         float  nf2 = dd2;                 /* Rule 128 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:418:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  418 |                         long  ll1 = 9999L, ll2 = 1234L;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:418:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  418 |                         long  ll1 = 9999L, ll2 = 1234L;
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:418:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  418 |                         long  ll1 = 9999L, ll2 = 1234L;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:418:50: warning: Rule 136: Magic number used; use symbolic constants instead
+  418 |                         long  ll1 = 9999L, ll2 = 1234L;
+      |                                                  ^
+C:\Users\nithi\drdoproject\test.cpp:419:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  419 |                         short ns1 = ll1;                  /* Rule 129 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:419:37: warning: Rule 129: Narrower int conversion without explicit cast
+  419 |                         short ns1 = ll1;                  /* Rule 129 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:420:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  420 |                         short ns2 = ll2;                  /* Rule 129 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:420:37: warning: Rule 129: Narrower int conversion without explicit cast
+  420 |                         short ns2 = ll2;                  /* Rule 129 */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:424:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  424 |                         int magic1 = 42;                  /* Rule 136 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:424:38: warning: Rule 136: Magic number used; use symbolic constants instead
+  424 |                         int magic1 = 42;                  /* Rule 136 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:425:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  425 |                         int magic2 = 255;                 /* Rule 136 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:425:38: warning: Rule 136: Magic number used; use symbolic constants instead
+  425 |                         int magic2 = 255;                 /* Rule 136 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:426:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  426 |                         int magic3 = 1024;                /* Rule 136 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:426:38: warning: Rule 136: Magic number used; use symbolic constants instead
+  426 |                         int magic3 = 1024;                /* Rule 136 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:430:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  430 |                         int val1 = arr[2];                /* Rule 137 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:430:36: warning: Rule 137: Numeric literal used as array subscript; use symbolic name instead
+  430 |                         int val1 = arr[2];                /* Rule 137 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:430:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  430 |                         int val1 = arr[2];                /* Rule 137 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:431:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  431 |                         int val2 = arr[3];                /* Rule 137 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:431:36: warning: Rule 137: Numeric literal used as array subscript; use symbolic name instead
+  431 |                         int val2 = arr[3];                /* Rule 137 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:431:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  431 |                         int val2 = arr[3];                /* Rule 137 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:432:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  432 |                         int val3 = arr[5];                /* Rule 137 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:432:36: warning: Rule 137: Numeric literal used as array subscript; use symbolic name instead
+  432 |                         int val3 = arr[5];                /* Rule 137 */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:432:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  432 |                         int val3 = arr[5];                /* Rule 137 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:436:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  436 |                         double dv1 = 9.9, dv2 = 3.3;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:436:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:437:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  437 |                         int    iv1 = (int)dv1;           /* Rule 139 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:437:38: warning: Rule 139: Float value cast to non-float type
+  437 |                         int    iv1 = (int)dv1;           /* Rule 139 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:438:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  438 |                         long   iv2 = (long)dv2;          /* Rule 139 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:438:38: warning: Rule 139: Float value cast to non-float type
+  438 |                         long   iv2 = (long)dv2;          /* Rule 139 */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:442:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  442 |                         int y = 5;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:442:33: warning: Rule 136: Magic number used; use symbolic constants instead
+  442 |                         int y = 5;
+      |                                 ^
+C:\Users\nithi\drdoproject\test.cpp:443:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  443 |                         int ro1 = y++ + 1;               /* Rule 163 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:443:35: warning: Rule 163: Increment/decrement should not be mixed with other operators
+  443 |                         int ro1 = y++ + 1;               /* Rule 163 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:444:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  444 |                         int ro2 = --y + 2;               /* Rule 163 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:444:35: warning: Rule 163: Increment/decrement should not be mixed with other operators
+  444 |                         int ro2 = --y + 2;               /* Rule 163 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:444:41: warning: Rule 136: Magic number used; use symbolic constants instead
+  444 |                         int ro2 = --y + 2;               /* Rule 163 */
+      |                                         ^
+C:\Users\nithi\drdoproject\test.cpp:445:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  445 |                         int ro3 = y++ * 3;               /* Rule 163 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:445:35: warning: Rule 163: Increment/decrement should not be mixed with other operators
+  445 |                         int ro3 = y++ * 3;               /* Rule 163 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:445:41: warning: Rule 136: Magic number used; use symbolic constants instead
+  445 |                         int ro3 = y++ * 3;               /* Rule 163 */
+      |                                         ^
+C:\Users\nithi\drdoproject\test.cpp:449:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  449 |                         int a = 1, b = 2, c = 3;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:449:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:449:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  449 |                         int a = 1, b = 2, c = 3;
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:449:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  449 |                         int a = 1, b = 2, c = 3;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:449:47: warning: Rule 136: Magic number used; use symbolic constants instead
+  449 |                         int a = 1, b = 2, c = 3;
+      |                                               ^
+C:\Users\nithi\drdoproject\test.cpp:450:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+  450 |                         if (a && b) { a = 0; }     /* Rule 165 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:451:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+  451 |                         if (a || c) { a = 0; }     /* Rule 165 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:452:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+  452 |                         if (a && b && c) { a = 0; }     /* Rule 165 (two && nodes) */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:452:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+C:\Users\nithi\drdoproject\test.cpp:456:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  456 |                         int p = 1, q = 0;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:456:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:457:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+  457 |                         if (p && q++) { p = 0; }         /* Rule 25 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:457:34: warning: Rule 163: Increment/decrement should not be mixed with other operators
+  457 |                         if (p && q++) { p = 0; }         /* Rule 25 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:458:29: warning: Rule 165: Each operand of && or || shall have essentially Boolean type
+  458 |                         if (p || ++q) { p = 0; }        /* Rule 25 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:458:34: warning: Rule 163: Increment/decrement should not be mixed with other operators
+  458 |                         if (p || ++q) { p = 0; }        /* Rule 25 */
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:462:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  462 |                         unsigned int u1 = 5U, u2 = 10U;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:462:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  462 |                         unsigned int u1 = 5U, u2 = 10U;
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:462:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  462 |                         unsigned int u1 = 5U, u2 = 10U;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:462:52: warning: Rule 136: Magic number used; use symbolic constants instead
+  462 |                         unsigned int u1 = 5U, u2 = 10U;
+      |                                                    ^
+C:\Users\nithi\drdoproject\test.cpp:463:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  463 |                         unsigned int neg1 = -u1;          /* Rule 166 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:463:45: warning: Rule 166: Unary minus shall not be applied to an unsigned expression
+  463 |                         unsigned int neg1 = -u1;          /* Rule 166 */
+      |                                             ^
+C:\Users\nithi\drdoproject\test.cpp:464:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  464 |                         unsigned int neg2 = -u2;          /* Rule 166 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:464:45: warning: Rule 166: Unary minus shall not be applied to an unsigned expression
+  464 |                         unsigned int neg2 = -u2;          /* Rule 166 */
+      |                                             ^
+C:\Users\nithi\drdoproject\test.cpp:468:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  468 |                         int ca = 0, cb = 0, cc = 0;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:468:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:468:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+C:\Users\nithi\drdoproject\test.cpp:469:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  469 |                         int cd = (ca = 1, cb = 2);        /* Rule 171 + Rule 32 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:469:35: warning: Rule 171: The comma operator shall not be used
+  469 |                         int cd = (ca = 1, cb = 2);        /* Rule 171 + Rule 32 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:469:35: warning: Rule 32: The comma operator shall not be used except in the control expression of a for loop
+C:\Users\nithi\drdoproject\test.cpp:469:48: warning: Rule 136: Magic number used; use symbolic constants instead
+  469 |                         int cd = (ca = 1, cb = 2);        /* Rule 171 + Rule 32 */
+      |                                                ^
+C:\Users\nithi\drdoproject\test.cpp:470:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  470 |                         int ce = (cb = 3, cc = 4);        /* Rule 171 + Rule 32 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:470:35: warning: Rule 171: The comma operator shall not be used
+  470 |                         int ce = (cb = 3, cc = 4);        /* Rule 171 + Rule 32 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:470:35: warning: Rule 32: The comma operator shall not be used except in the control expression of a for loop
+C:\Users\nithi\drdoproject\test.cpp:470:40: warning: Rule 136: Magic number used; use symbolic constants instead
+  470 |                         int ce = (cb = 3, cc = 4);        /* Rule 171 + Rule 32 */
+      |                                        ^
+C:\Users\nithi\drdoproject\test.cpp:470:48: warning: Rule 136: Magic number used; use symbolic constants instead
+  470 |                         int ce = (cb = 3, cc = 4);        /* Rule 171 + Rule 32 */
+      |                                                ^
+C:\Users\nithi\drdoproject\test.cpp:474:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  474 |                         int rv = 1;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:477:35: warning: Rule 136: Magic number used; use symbolic constants instead
+  477 |                         if (rv == 2) rv = 0;              /* Rule 181 + Rule 46 */
+      |                                   ^
+C:\Users\nithi\drdoproject\test.cpp:480:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  480 |                         int ev = 1;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:483:34: warning: Rule 136: Magic number used; use symbolic constants instead
+  483 |                         if (ev > 5) { ev = 0; }
+      |                                  ^
+C:\Users\nithi\drdoproject\test.cpp:488:30: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  488 |                         for (int k2 = 0; k2 < 10; k2++) {
+      |                              ^
+C:\Users\nithi\drdoproject\test.cpp:488:47: warning: Rule 136: Magic number used; use symbolic constants instead
+  488 |                         for (int k2 = 0; k2 < 10; k2++) {
+      |                                               ^
+C:\Users\nithi\drdoproject\test.cpp:489:29: warning: Rule 46: if/else-if must have a final else clause
+  489 |                             if (k2 == 3) break;           /* break 1 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:489:29: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:490:29: warning: Rule 46: if/else-if must have a final else clause
+  490 |                             if (k2 == 7) break;           /* Rule 195: break 2 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:490:29: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:489:42: warning: Rule 44: break is forbidden in loops
+  489 |                             if (k2 == 3) break;           /* break 1 */
+      |                                          ^
+C:\Users\nithi\drdoproject\test.cpp:489:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  489 |                             if (k2 == 3) break;           /* break 1 */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:490:42: warning: Rule 44: break is forbidden in loops
+  490 |                             if (k2 == 7) break;           /* Rule 195: break 2 */
+      |                                          ^
+C:\Users\nithi\drdoproject\test.cpp:490:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  490 |                             if (k2 == 7) break;           /* Rule 195: break 2 */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:492:25: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  492 |                         int w2 = 0;
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:493:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  493 |                         while (w2 < 20) {
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:494:29: warning: Rule 46: if/else-if must have a final else clause
+  494 |                             if (w2 == 5)  break;          /* break 1 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:494:29: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:495:29: warning: Rule 46: if/else-if must have a final else clause
+  495 |                             if (w2 == 15) break;          /* Rule 195: break 2 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:495:29: warning: Rule 181: If must use compound statement {}
+C:\Users\nithi\drdoproject\test.cpp:494:43: warning: Rule 44: break is forbidden in loops
+  494 |                             if (w2 == 5)  break;          /* break 1 */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:494:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  494 |                             if (w2 == 5)  break;          /* break 1 */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:495:43: warning: Rule 44: break is forbidden in loops
+  495 |                             if (w2 == 15) break;          /* Rule 195: break 2 */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:495:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  495 |                             if (w2 == 15) break;          /* Rule 195: break 2 */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:503:29: warning: Rule 43: goto statement is prohibited
+  503 |                             goto skip_a;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:502:29: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  502 |                             int dead_a = 0;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:504:38: warning: Rule 136: Magic number used; use symbolic constants instead
+  504 |                             dead_a = 99;                   /* Rule 39: unreachable */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:510:29: warning: Rule 43: goto statement is prohibited
+  510 |                             goto skip_b;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:509:29: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  509 |                             int dead_b = 0;
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:511:38: warning: Rule 136: Magic number used; use symbolic constants instead
+  511 |                             dead_b = 88;                   /* Rule 39: unreachable */
+      |                                      ^
+C:\Users\nithi\drdoproject\test.cpp:519:29: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  519 |                             int x = 100;                   /* Rule 15: shadows outer 'x' */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:519:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  519 |                             int x = 100;                   /* Rule 15: shadows outer 'x' */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:523:29: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  523 |                             int v = 200;                   /* Rule 15: shadows outer 'v' */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:523:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  523 |                             int v = 200;                   /* Rule 15: shadows outer 'v' */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:527:29: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  527 |                             int y = 300;                   /* Rule 15: shadows outer 'y' */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:527:37: warning: Rule 136: Magic number used; use symbolic constants instead
+  527 |                             int y = 300;                   /* Rule 15: shadows outer 'y' */
+      |                                     ^
+C:\Users\nithi\drdoproject\test.cpp:532:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  532 |                         var_logger(1, 42, 99);             /* Rule 56 call */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:532:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  532 |                         var_logger(1, 42, 99);             /* Rule 56 call */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:533:36: warning: Rule 136: Magic number used; use symbolic constants instead
+  533 |                         var_logger(2, 10, 20, 30);        /* Rule 56 call */
+      |                                    ^
+C:\Users\nithi\drdoproject\test.cpp:533:39: warning: Rule 136: Magic number used; use symbolic constants instead
+  533 |                         var_logger(2, 10, 20, 30);        /* Rule 56 call */
+      |                                       ^
+C:\Users\nithi\drdoproject\test.cpp:533:43: warning: Rule 136: Magic number used; use symbolic constants instead
+  533 |                         var_logger(2, 10, 20, 30);        /* Rule 56 call */
+      |                                           ^
+C:\Users\nithi\drdoproject\test.cpp:533:47: warning: Rule 136: Magic number used; use symbolic constants instead
+  533 |                         var_logger(2, 10, 20, 30);        /* Rule 56 call */
+      |                                               ^
+C:\Users\nithi\drdoproject\test.cpp:560:1: warning: Rule 28: A typedef name shall be a unique identifier
+  560 | typedef int StatusCode;            /* typedef at file scope */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:561:1: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  561 | int StatusCode;                    /* Rule 11: var reuses typedef name */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:561:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:561:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:561:5: warning: Rule 11: Once a name is assigned as a typedef it shall not be reused for any other purpose
+  561 | int StatusCode;                    /* Rule 11: var reuses typedef name */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:561:5: warning: Rule 19: External objects should not be declared in more than one file
+C:\Users\nithi\drdoproject\test.cpp:563:1: warning: Rule 28: A typedef name shall be a unique identifier
+  563 | typedef void (*HandlerFn)(void);   /* typedef for fn pointer */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:564:1: warning: Rule 12: Every defined function shall be called at least once
+  564 | void HandlerFn(void) {}            /* Rule 11: fn reuses typedef name + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:564:6: warning: Rule 11: Once a name is assigned as a typedef it shall not be reused for any other purpose
+  564 | void HandlerFn(void) {}            /* Rule 11: fn reuses typedef name + Rule 58 */
+      |      ^
+C:\Users\nithi\drdoproject\test.cpp:564:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+  564 | void HandlerFn(void) {}            /* Rule 11: fn reuses typedef name + Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:570:1: warning: Rule 200: Global variables should be avoided
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:570:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:570:1: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+C:\Users\nithi\drdoproject\test.cpp:570:12: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |            ^
+C:\Users\nithi\drdoproject\test.cpp:570:22: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:570:25: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:570:28: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:570:22: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:570:25: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                         ^
+C:\Users\nithi\drdoproject\test.cpp:570:28: warning: Rule 136: Magic number used; use symbolic constants instead
+  570 | int  r23_a[4] = { 1, 2, 3, 4 };     /* Rule 23 */
+      |                            ^
+C:\Users\nithi\drdoproject\test.cpp:571:1: warning: Rule 200: Global variables should be avoided
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:571:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:571:1: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+C:\Users\nithi\drdoproject\test.cpp:571:12: warning: Rule 136: Magic number used; use symbolic constants instead
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |            ^
+C:\Users\nithi\drdoproject\test.cpp:571:19: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                   ^
+C:\Users\nithi\drdoproject\test.cpp:571:24: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:571:29: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:571:19: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                   ^
+C:\Users\nithi\drdoproject\test.cpp:571:24: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:571:29: warning: Rule 129: Narrower int conversion without explicit cast
+  571 | char r23_b[3] = { 'x', 'y', 'z' };  /* Rule 23 */
+      |                             ^
+C:\Users\nithi\drdoproject\test.cpp:572:1: warning: Rule 120: Array not fully initialized
+  572 | int  r23_c[6] = { 0 };               /* Rule 23 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:572:1: warning: Rule 200: Global variables should be avoided
+C:\Users\nithi\drdoproject\test.cpp:572:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:572:1: warning: Rule 23: Braces shall be used to indicate and match the structure in the non-zero initialization of arrays
+C:\Users\nithi\drdoproject\test.cpp:572:12: warning: Rule 136: Magic number used; use symbolic constants instead
+  572 | int  r23_c[6] = { 0 };               /* Rule 23 */
+      |            ^
+C:\Users\nithi\drdoproject\test.cpp:579:1: warning: Rule 200: Global variables should be avoided
+  579 | const char* r1_str1 = "hello\x80world";   /* Rule 1 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:579:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:579:23: warning: Rule 1: Only characters and escape sequences defined in the ISO C standard shall be used
+  579 | const char* r1_str1 = "hello\x80world";   /* Rule 1 */
+      |                       ^
+C:\Users\nithi\drdoproject\test.cpp:580:1: warning: Rule 200: Global variables should be avoided
+  580 | const char* r1_str2 = "data\xFF";         /* Rule 1 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:580:1: warning: Rule 4: There shall be no unused variables
+C:\Users\nithi\drdoproject\test.cpp:580:23: warning: Rule 1: Only characters and escape sequences defined in the ISO C standard shall be used
+  580 | const char* r1_str2 = "data\xFF";         /* Rule 1 */
+      |                       ^
+C:\Users\nithi\drdoproject\test.cpp:585:1: warning: Rule 59: Every function shall have an explicit return type
+  585 | static int r6_func_a(int x)        /* Rule 58 (no prior proto) */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:585:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:585:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:585:22: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  585 | static int r6_func_a(int x)        /* Rule 58 (no prior proto) */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:588:5: warning: Rule 6: A project shall not contain any unreachable code
+  588 |     x = 99;                        /* Rule 6: unreachable */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:588:5: warning: Rule 39: No inaccessible code after a goto or return statement
+C:\Users\nithi\drdoproject\test.cpp:588:9: warning: Rule 136: Magic number used; use symbolic constants instead
+  588 |     x = 99;                        /* Rule 6: unreachable */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:591:1: warning: Rule 59: Every function shall have an explicit return type
+  591 | static int r6_func_b(int x)        /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:591:1: warning: Rule 196: Function shall have a single point of exit
+C:\Users\nithi\drdoproject\test.cpp:591:1: warning: Rule 12: Every defined function shall be called at least once
+C:\Users\nithi\drdoproject\test.cpp:591:1: warning: Rule 64: At most one return statement per function
+C:\Users\nithi\drdoproject\test.cpp:591:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:591:22: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  591 | static int r6_func_b(int x)        /* Rule 58 */
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:593:5: warning: Rule 46: if/else-if must have a final else clause
+  593 |     if (x > 0) {
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:595:9: warning: Rule 6: A project shall not contain any unreachable code
+  595 |         x = 0;                     /* Rule 6: unreachable inside if-body */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:595:9: warning: Rule 39: No inaccessible code after a goto or return statement
+C:\Users\nithi\drdoproject\test.cpp:604:1: warning: Rule 12: Every defined function shall be called at least once
+  604 | static void r22_func(void)         /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:604:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:606:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  606 |     int  r22_a;                    /* Rule 22: no initializer */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:606:5: warning: Rule 22: All automatic variables shall be assigned a value before being used
+C:\Users\nithi\drdoproject\test.cpp:607:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  607 |     char r22_b;                    /* Rule 22: no initializer */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:607:5: warning: Rule 22: All automatic variables shall be assigned a value before being used
+C:\Users\nithi\drdoproject\test.cpp:608:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  608 |     long r22_c;                    /* Rule 22: no initializer */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:608:5: warning: Rule 22: All automatic variables shall be assigned a value before being used
+C:\Users\nithi\drdoproject\test.cpp:617:1: warning: Rule 28: A typedef name shall be a unique identifier
+  617 | typedef void (*VoidIntFn)(int);    /* Rule 28: typedef */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:617:27: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  617 | typedef void (*VoidIntFn)(int);    /* Rule 28: typedef */
+      |                           ^
+C:\Users\nithi\drdoproject\test.cpp:618:1: warning: Rule 28: A typedef name shall be a unique identifier
+  618 | typedef int  (*IntVoidFn)(void);   /* Rule 28: typedef */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:620:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+  620 | static void  takes_int(int x) { (void)x; }  /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:620:24: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  620 | static void  takes_int(int x) { (void)x; }  /* Rule 58 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:621:1: warning: Rule 59: Every function shall have an explicit return type
+  621 | static int   returns_int(void) { return 0; }  /* Rule 58 + Rule 59 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:621:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:622:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+  622 | static void  takes_two(int a, int b) { (void)a;(void)b; } /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:622:24: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  622 | static void  takes_two(int a, int b) { (void)a;(void)b; } /* Rule 58 */
+      |                        ^
+C:\Users\nithi\drdoproject\test.cpp:622:31: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  622 | static void  takes_two(int a, int b) { (void)a;(void)b; } /* Rule 58 */
+      |                               ^
+C:\Users\nithi\drdoproject\test.cpp:624:1: warning: Rule 12: Every defined function shall be called at least once
+  624 | static void r88_func(void)         /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:624:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:627:21: warning: Rule 161: Invalid pointer conversion from void pointer
+  627 |     VoidIntFn fp1 = (VoidIntFn)returns_int;   /* Rule 88 + Rule 161 */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:630:21: warning: Rule 161: Invalid pointer conversion from void pointer
+  630 |     VoidIntFn fp2 = (VoidIntFn)takes_two;     /* Rule 88 + Rule 161 */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:633:21: warning: Rule 161: Invalid pointer conversion from void pointer
+  633 |     IntVoidFn fp3 = (IntVoidFn)takes_int;     /* Rule 88 + Rule 161 */
+      |                     ^
+C:\Users\nithi\drdoproject\test.cpp:642:1: warning: Rule 12: Every defined function shall be called at least once
+  642 | static void r126_func(void)        /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:642:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:645:5: warning: Rule 46: if/else-if must have a final else clause
+  645 |     if (0) {                       /* Rule 126 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:645:5: warning: Rule 126: Construct leads to infeasible code â€” branch condition evaluates to a constant value
+C:\Users\nithi\drdoproject\test.cpp:650:5: warning: Rule 46: if/else-if must have a final else clause
+  650 |     if (1) {                       /* Rule 126 + Rule 181 (no else) */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:650:5: warning: Rule 126: Construct leads to infeasible code â€” branch condition evaluates to a constant value
+C:\Users\nithi\drdoproject\test.cpp:655:5: warning: Rule 46: if/else-if must have a final else clause
+  655 |     if (2 + 2 == 4) {              /* Rule 126 + Rule 46 + Rule 181 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:655:5: warning: Rule 126: Construct leads to infeasible code â€” branch condition evaluates to a constant value
+C:\Users\nithi\drdoproject\test.cpp:660:5: warning: Rule 126: Construct leads to infeasible code â€” loop condition evaluates to a constant value
+  660 |     while (0) {                    /* Rule 126 */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:646:9: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  646 |         int dead = 1; (void)dead;
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:651:9: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  651 |         int always = 2; (void)always;
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:651:22: warning: Rule 136: Magic number used; use symbolic constants instead
+  651 |         int always = 2; (void)always;
+      |                      ^
+C:\Users\nithi\drdoproject\test.cpp:655:18: warning: Rule 136: Magic number used; use symbolic constants instead
+  655 |     if (2 + 2 == 4) {              /* Rule 126 + Rule 46 + Rule 181 */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:655:9: warning: Rule 136: Magic number used; use symbolic constants instead
+  655 |     if (2 + 2 == 4) {              /* Rule 126 + Rule 46 + Rule 181 */
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:655:13: warning: Rule 136: Magic number used; use symbolic constants instead
+  655 |     if (2 + 2 == 4) {              /* Rule 126 + Rule 46 + Rule 181 */
+      |             ^
+C:\Users\nithi\drdoproject\test.cpp:656:9: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  656 |         int x = 0; (void)x;
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:661:9: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  661 |         int never = 0; (void)never;
+      |         ^
+C:\Users\nithi\drdoproject\test.cpp:668:1: warning: Rule 12: Every defined function shall be called at least once
+  668 | static void r134_func(void)        /* Rule 58 */
+      | ^
+C:\Users\nithi\drdoproject\test.cpp:668:1: warning: Rule 58: Functions shall have a prototype declaration visible at both the function definition and call site
+C:\Users\nithi\drdoproject\test.cpp:670:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  670 |     int val = 8;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:670:15: warning: Rule 136: Magic number used; use symbolic constants instead
+  670 |     int val = 8;
+      |               ^
+C:\Users\nithi\drdoproject\test.cpp:673:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  673 |     int r134_a = val >> -1;        /* Rule 134 (negative constant RHS) */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:673:18: warning: Rule 134: RHS of shift operator shall not be negative
+  673 |     int r134_a = val >> -1;        /* Rule 134 (negative constant RHS) */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:674:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  674 |     int r134_b = val << -2;        /* Rule 134 (negative constant RHS) */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:674:18: warning: Rule 134: RHS of shift operator shall not be negative
+  674 |     int r134_b = val << -2;        /* Rule 134 (negative constant RHS) */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:674:26: warning: Rule 136: Magic number used; use symbolic constants instead
+  674 |     int r134_b = val << -2;        /* Rule 134 (negative constant RHS) */
+      |                          ^
+C:\Users\nithi\drdoproject\test.cpp:677:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  677 |     int shift = 3;
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:677:17: warning: Rule 136: Magic number used; use symbolic constants instead
+  677 |     int shift = 3;
+      |                 ^
+C:\Users\nithi\drdoproject\test.cpp:678:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  678 |     int r134_c = val >> shift;     /* Rule 134 (signed var, may be negative) */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:678:18: warning: Rule 134: RHS of shift operator shall not be negative (signed integer may be negative at runtime)
+  678 |     int r134_c = val >> shift;     /* Rule 134 (signed var, may be negative) */
+      |                  ^
+C:\Users\nithi\drdoproject\test.cpp:679:5: warning: Rule 8: Basic types shall not be used; use fixed-length typedefs e.g. int32_t, uint8_t
+  679 |     int r134_d = val << shift;     /* Rule 134 (signed var, may be negative) */
+      |     ^
+C:\Users\nithi\drdoproject\test.cpp:679:18: warning: Rule 134: RHS of shift operator shall not be negative (signed integer may be negative at runtime)
+  679 |     int r134_d = val << shift;     /* Rule 134 (signed var, may be negative) */
+      |                  ^
+682 warnings and 11 errors generated.
+Error while processing C:\Users\nithi\drdoproject\test.cpp.
+
+
+------------------------------------------------------------
+AI REVIEW AND FIX SUGGESTIONS
+------------------------------------------------------------
+
+This code is a collection of various C language features and best practices, with the goal of demonstrating how to write clean, maintainable, and efficient code. It includes:
+
+* Functions that demonstrate how to use function pointers, typedefs, and variable declarations with initializers.
+* Code that shows how to handle unreachable code after a return statement, as well as how to handle functions with mismatched parameter counts or return types.
+* Examples of how to write branch conditions that evaluate to constant values, which can lead to infeasible or always-taken code.
+* Code that demonstrates how to use shift operators with negative RHS values, which is a potential error.
+
+Overall, this code provides a good starting point for learning C programming and best practices, and can be used as a reference for developers who want to improve their coding skills.
