@@ -1,4 +1,4 @@
-// Rule 70: #include not at column 1
+
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -681,3 +681,4 @@ static void r88_func(void)       /* Rule 58 */
     VoidIntFn fp2 = (VoidIntFn)takes_int;   /* Rule 88 + Rule 161 */
     (void)fp1; (void)fp2;
 }
+
